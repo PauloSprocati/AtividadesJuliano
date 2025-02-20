@@ -16,22 +16,154 @@
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
 
-        <Grid.RowDefinitions>
-            <RowDefinition Height="*" />
-            <RowDefinition Height="45" />
-            <RowDefinition Height="45" />
-            <RowDefinition Height="*" />
-        </Grid.RowDefinitions>
+        <Grid Grid.Column="0" Margin="5">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="45" />
+                <RowDefinition Height="45" />
+                <RowDefinition Height="45" />
+            </Grid.RowDefinitions>
 
-        <Button
-            x:Name="btnExercicioUm"
-            Grid.Column="0"
-            Grid.Row="1"
-            Style="{StaticResource MaterialDesignRaisedSecondaryLightButton}"
-            Width="145"
-            ToolTip="Soma de Dois Números (Inteiros)"
-            Content="Exercício 1"
-            IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}" 
-            Click="btnExercicioUm_Click"/>
+            <Button
+                x:Name="btnExercicioUm"
+                Grid.Column="0"
+                Grid.Row="1"
+                Style="{StaticResource MaterialDesignRaisedSecondaryLightButton}"
+                Width="145"
+                ToolTip="Soma de Dois Números (Inteiros)"
+                Content="Exercício 1"
+                IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}" 
+                Click="btnExercicioUm_Click"/>
+
+            <Button
+                x:Name="btnExercicioDois"
+                Grid.Column="0"
+                Grid.Row="2"
+                Style="{StaticResource MaterialDesignRaisedSecondaryLightButton}"
+                Width="145"
+                ToolTip="Conventer Número Fahrenheit"
+                Content="Exercício 2"
+                IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}" 
+                Click="btnExercicioDois_Click"/>
+        </Grid>
+
+        <Grid Grid.Column="1" Margin="5">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="45" />
+                <RowDefinition Height="45" />
+                <RowDefinition Height="45" />
+            </Grid.RowDefinitions>
+
+            <Button
+                x:Name="btnExercicioTres"
+                Grid.Column="0"
+                Grid.Row="1"
+                Style="{StaticResource MaterialDesignRaisedSecondaryLightButton}"
+                Width="145"
+                ToolTip="Soma de Dois Números (Inteiros)"
+                Content="Exercício 3"
+                IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}" 
+                Click="btnExercicioTres_Click"/>
+
+            <Button
+                x:Name="btnExercicioQuatro"
+                Grid.Column="0"
+                Grid.Row="2"
+                Style="{StaticResource MaterialDesignRaisedSecondaryLightButton}"
+                Width="145"
+                ToolTip="Conventer Número Fahrenheit"
+                Content="Exercício 4"
+                IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}" 
+                Click="btnExercicioQuatro_Click"/>
+        </Grid>
+
+        <Grid Grid.Column="2" Margin="5">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="45" />
+                <RowDefinition Height="45" />
+                <RowDefinition Height="45" />
+            </Grid.RowDefinitions>
+
+            <Button
+                x:Name="btnExercicioCinco"
+                Grid.Column="0"
+                Grid.Row="1"
+                Style="{StaticResource MaterialDesignRaisedSecondaryLightButton}"
+                Width="145"
+                ToolTip="Soma de Dois Números (Inteiros)"
+                Content="Exercício 5"
+                IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}" 
+                Click="btnExercicioCinco_Click"/>
+
+            <Button
+                x:Name="btnExercicioSeis"
+                Grid.Column="0"
+                Grid.Row="2"
+                Style="{StaticResource MaterialDesignRaisedSecondaryLightButton}"
+                Width="145"
+                ToolTip="Conventer Número Fahrenheit"
+                Content="Exercício 6"
+                IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}" 
+                Click="btnExercicioSeis_Click"/>
+        </Grid>
+
+        <Grid Grid.Column="3" Margin="5">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="45" />
+                <RowDefinition Height="45" />
+                <RowDefinition Height="45" />
+            </Grid.RowDefinitions>
+
+            <Button
+                x:Name="btnExercicioSete"
+                Grid.Column="0"
+                Grid.Row="1"
+                Style="{StaticResource MaterialDesignRaisedSecondaryLightButton}"
+                Width="145"
+                ToolTip="Soma de Dois Números (Inteiros)"
+                Content="Exercício 7"
+                IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}" 
+                Click="btnExercicioSete_Click"/>
+
+            <Button
+                x:Name="btnExercicioOito"
+                Grid.Column="0"
+                Grid.Row="2"
+                Style="{StaticResource MaterialDesignRaisedSecondaryLightButton}"
+                Width="145"
+                ToolTip="Conventer Número Fahrenheit"
+                Content="Exercício 8"
+                IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}" 
+                Click="btnExercicioOito_Click"/>
+        </Grid>
+
+        <Grid Grid.Column="4" Margin="5">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="45" />
+                <RowDefinition Height="45" />
+                <RowDefinition Height="45" />
+            </Grid.RowDefinitions>
+
+            <Button
+                x:Name="btnExercicioNove"
+                Grid.Column="0"
+                Grid.Row="1"
+                Style="{StaticResource MaterialDesignRaisedSecondaryLightButton}"
+                Width="145"
+                ToolTip="Soma de Dois Números (Inteiros)"
+                Content="Exercício 9"
+                IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}" 
+                Click="btnExercicioNove_Click"/>
+
+            <Button
+                x:Name="btnExercicioDez"
+                Grid.Column="0"
+                Grid.Row="2"
+                Style="{StaticResource MaterialDesignRaisedSecondaryLightButton}"
+                Width="145"
+                ToolTip="Conventer Número Fahrenheit"
+                Content="Exercício 10"
+                IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}" 
+                Click="btnExercicioDez_Click"/>    
+        </Grid>
     </Grid>
 </Window>
