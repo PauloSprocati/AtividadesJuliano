@@ -30,7 +30,7 @@ public partial class MainWindow : Window
 
     private void btnExercicioQuatro_Click(object sender, RoutedEventArgs e)
     {
-        new ExercicioDois().ShowDialog();
+        new ExercicioQuatro().ShowDialog();
     }
 
     private void btnExercicioCinco_Click(object sender, RoutedEventArgs e)
