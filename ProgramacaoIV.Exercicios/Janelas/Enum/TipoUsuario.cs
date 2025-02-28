@@ -3,10 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.ComponentModel;
 
 namespace ProgramacaoIV.Exercicios.Janelas.Enum
 {
-    internal class TipoUsuario
+    internal enum TipoUsuario
     {
+        [Description("Administrador do sistema")]
+        Administrador,
+    
+        [Description("Usuário com permissões comuns")]
+        UsuarioComum,
+    
+        [Description("Visitante com acesso restrito")]
+        Visitante
     }
 }

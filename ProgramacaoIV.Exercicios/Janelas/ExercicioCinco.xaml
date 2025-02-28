@@ -4,9 +4,33 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ProgramacaoIV.Exercicios.Janelas"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d"
         Title="ExercicioCinco" Height="450" Width="800">
     <Grid>
-        
+        <Grid Background="WhiteSmoke">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="50" />
+            </Grid.RowDefinitions>
+
+            <ComboBox 
+                x:Name="comboTipoUsuario" 
+                HorizontalAlignment="Left" 
+                VerticalAlignment="Top" Width="200"
+                Margin="10"/>
+
+            <Button
+                 x:Name="btnExibirDescrições"            
+                 Grid.Row="2"
+                 Margin="3"
+                 Style="{StaticResource MaterialDesignRaisedSecondaryLightButton}"            
+                 ToolTip="Descrições!"
+                 Content="Ver Descrição"
+                 IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}" 
+                 Click="btnExibirDescrições_Click"/>
+        </Grid>
     </Grid>
 </Window>
