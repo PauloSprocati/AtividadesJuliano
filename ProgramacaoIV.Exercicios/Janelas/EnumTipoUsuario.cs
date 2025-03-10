@@ -5,16 +5,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.ComponentModel;
 
-namespace ProgramacaoIV.Exercicios.Janelas.Enum
+namespace ProgramacaoIV.Exercicios.Janelas
 {
-    internal enum TipoUsuario
+    public enum EnumTipoUsuario
     {
         [Description("Administrador do sistema")]
         Administrador,
-    
+
         [Description("Usuário com permissões comuns")]
         UsuarioComum,
-    
+
         [Description("Visitante com acesso restrito")]
         Visitante
     }

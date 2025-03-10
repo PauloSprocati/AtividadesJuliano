@@ -35,31 +35,31 @@ public partial class MainWindow : Window
 
     private void btnExercicioCinco_Click(object sender, RoutedEventArgs e)
     {
-        new ExercicioDois().ShowDialog();
+        new ExercicioCinco().ShowDialog();
     }
 
     private void btnExercicioSeis_Click(object sender, RoutedEventArgs e)
     {
-        new ExercicioDois().ShowDialog();
+        new ExercicioSeis().ShowDialog();
     }
 
     private void btnExercicioSete_Click(object sender, RoutedEventArgs e)
     {
-        new ExercicioDois().ShowDialog();
+        new ExercicioSete().ShowDialog();
     }
 
     private void btnExercicioOito_Click(object sender, RoutedEventArgs e)
     {
-        new ExercicioDois().ShowDialog();
+        new ExercicioOito().ShowDialog();
     }
 
     private void btnExercicioNove_Click(object sender, RoutedEventArgs e)
     {
-        new ExercicioDois().ShowDialog();
+        new ExercicioNove().ShowDialog();
     }
 
     private void btnExercicioDez_Click(object sender, RoutedEventArgs e)
     {
-        new ExercicioDois().ShowDialog();
+        new ExercicioDez().ShowDialog();
     }
 }

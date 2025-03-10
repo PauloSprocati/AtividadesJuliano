@@ -1,6 +1,4 @@
-﻿using ProgramacaoIV.Exercicios.Janelas.Enum;
-
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -27,23 +25,22 @@ namespace ProgramacaoIV.Exercicios.Janelas
         {
             InitializeComponent();
 
-            comboTipoUsuario.ItemsSource = Enum.GetValues(typeof(TipoUsuario)).OfType<TipoUsuario>().ToList();
+            InitializeComponent();
+            comboTipoUsuario.ItemsSource = Enum.GetValues(typeof(EnumTipoUsuario)).Cast<EnumTipoUsuario>().ToList();
         }
 
         private void btnExibirDescrições_Click(object sender, RoutedEventArgs e)
         {
-            TipoUsuario tipoSelecionado = (TipoUsuario)comboBoxTipoUsuario.SelectedItem;
+            EnumTipoUsuario tipoSelecionado = (EnumTipoUsuario)comboTipoUsuario.SelectedItem;
 
-            // Obter a descrição do enum selecionado
             string descricao = GetEnumDescription(tipoSelecionado);
 
-            // Exibir a descrição em um MessageBox
             MessageBox.Show(descricao, "Descrição do Tipo de Usuário");
         }
 
         private string GetEnumDescription(Enum value)
         {
-            // Obter o atributo de descrição do valor do Enum
+
             FieldInfo field = value.GetType().GetField(value.ToString());
             DescriptionAttribute attribute = (DescriptionAttribute)Attribute.GetCustomAttribute(field, typeof(DescriptionAttribute));
             return attribute == null ? value.ToString() : attribute.Description;
